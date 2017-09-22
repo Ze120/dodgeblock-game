@@ -29,4 +29,10 @@ public class Player : MonoBehaviour {
         rb.MovePosition(newPosition);
     
     }
+
+    void OnCollisionEnter2D () {
+
+        FindObjectOfType<GameManager>().EndGame();
+    
+    }
 }
